@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Formulario</title>
+</head>
+<body>
+
+<div>
+    <form action="procesar.php" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <h1>Registro de Datos</h1>
+
+            <label for="nombre"><strong>Nombre:</strong></label>
+            <input type="text" id="nombre" name="nombre" required 
+                   placeholder="Ej: Carolina"
+                   pattern="[A-Za-z]+"
+                   minlength="4"
+                   maxlength="10">
+            <br><br>
+
+            <label for="cargo"><strong>Cargo:</strong></label>
+            <input type="text" id="cargo" name="cargo" required
+                   title="Ingrese sólo letras"
+                   pattern="[A-Za-z]+"
+                   minlength="4"
+                   maxlength="12">
+            <br><br>
+            
+            <label for="color favorito"><strong>Color favorito:</strong></label>
+            <input type="text" id="color favorito" name="color favorito" required
+                   title="Ingrese sólo letras"
+                   pattern="[A-Za-z]+"
+                   minlength="4"
+                   maxlength="12">
+            <br><br>
+                              
+
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+            <br><br>
+
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Enviar Datos">
+
+        </fieldset>
+    </form>
+</div>
